@@ -1,0 +1,186 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact Us</title>
+	<meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="css/appsite.css" rel="stylesheet" type="text/css" />
+    <style>
+        p{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: white;
+        }
+
+        em
+        {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-style:normal;
+        }
+
+        body {
+            background-color: indigo;
+           background-image: url('images/download (1).jpg');
+            background-repeat:repeat;
+            background-size:500px;
+        }
+
+        a {
+            color: white;
+            text-decoration:none;
+        }
+
+        section
+        {
+            padding:0px 20px;  
+            animation-name:animate;
+            animation-duration:1s;
+        }
+
+        header #contact {
+            border-radius: 100px;
+            padding: 14px 25px;
+            background-color: darkblue;
+        }
+
+        #nav {
+            display: inline-block;
+            float: right;
+            padding:20px 0px;
+        }
+
+        #fisrtname
+        {
+            border:none;
+            background-color:transparent;
+            border-bottom:1px solid white;
+            padding:10px;
+            color:white;
+        }
+        
+        #fisrtname:focus
+        {
+             outline:none;
+        }
+
+        #lastname
+        {
+            border:none;
+            background-color:transparent;
+            border-bottom:1px solid white;
+            padding:10px;
+            color:white;
+        }
+        
+        #lastname:focus
+        {
+             outline:none;
+        }
+
+        #email
+        {
+            border:none;
+            padding:10px 20px;
+            background:white;
+            border-radius:50px;
+            width:300px;
+        }
+
+        #email:focus{outline:none;}
+
+        #button
+        {
+            border:none;
+            padding:13px;
+            background:darkblue;
+            border-radius:50px;
+            width:auto;
+            font-size:10px;
+            color:white;
+            z-index:2;
+            margin-left:-60px;
+        }
+
+        #bold
+        {
+            font-weight:bold; 
+            font-size:3vw;
+            transition:1s;
+        }
+
+        .date{padding:10px 0px; box-sizing:border-box;}
+
+        @keyframes animate
+        {
+            from{/*font-size:0px;*/ opacity:0; transform:scale(0)}
+            to{/*font-size:3vw;*/ opacity:1; transform:scale(1)}
+        }
+
+        @media screen and (max-width:800px) {
+            p {
+                margin: 0;
+                text-align: center;
+            }
+
+            .date{padding:20px 0px;}
+
+            #nav {
+                display: block;
+                padding: 20px 0px;
+                float:left
+            }
+
+            #bold{font-size:30px;}
+
+            section{padding:20px 0px;}
+        }
+    </style>
+</head>
+<body>
+    <table style="width:auto; background-color:transparent; width:100vw; border-spacing:0px; box-sizing:border-box;" border="0">
+        <tr>
+            <td>
+                <header>
+                    <img src="images/lOGO (4).png" />
+                    <div id="nav">
+                        <a href="about.html">ABOUT US</a>
+                        <a href="blog.html">BLOG</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <a href="contact.html" id="contact">CONTACT US</a>
+                    </div>
+                </header>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <section>
+                   <p align="center" id="bold">SOMETHING AWESOME IS<br /> COMING SOON</p>
+                    <p align="center">Your all in one, marketing, tracking software <b>track</b>, <b>automate</b> and<br /> <b>optimize</b> your campaigns</p>
+                    <div style="width:100%" align="center" class="date">
+                        <div style="padding:30px; text-align:center; background-color:white; width:auto; display:inline-block; border-radius:10px;">
+                            <em style="font-size:30px; text-transform:none; font-weight:bold">7</em><br />
+                            <em>Days</em>
+                        </div>
+                        <div style="padding:30px; text-align:center; background-color:white; width:auto; display:inline-block; border-radius:10px;">
+                            <em style="font-size:30px; text-transform:none; font-weight:bold">24</em><br />
+                            <em>Hours</em>
+                        </div>
+                        <div style="padding:30px; text-align:center; background-color:white; width:auto; display:inline-block; border-radius:10px;">
+                            <em style="font-size:30px; text-transform:none; font-weight:bold">54</em><br />
+                            <em>Minutes</em>
+                        </div>
+                        <div style="padding:30px; text-align:center; background-color:white; width:auto; display:inline-block; border-radius:10px;">
+                            <em style="font-size:30px; text-transform:none; font-weight:bold">11</em><br />
+                            <em>Seconds</em>
+                        </div>
+                    </div>
+                    <div align="center" style="margin-top:25px;">
+                        <input type="text" placeholder="First name" id="fisrtname" />&nbsp;&nbsp;&nbsp;<input type="text" placeholder="Last name" id="lastname" />
+                    </div>
+                    <div align="center" style="margin-top:30px;">
+                        <input type="text" placeholder="Enter your email address..." id="email" /><button id="button">JOIN OUR WAITING LIST</button>
+                    </div>
+                </section>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
